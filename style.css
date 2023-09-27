@@ -1,0 +1,491 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: auto 0;
+    font-family: Arial;
+    
+  
+  
+}
+#homePage{
+    background-image: url(img/IMG_6660.jpg);
+    background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; background-size: cover;
+}
+
+.zone {
+    
+    cursor:pointer;
+    
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+
+}
+
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+.box:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transofrm:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    transform:rotate(-7deg);
+}
+/*Nav*/
+.sticky {
+    position: fixed ;
+    
+    z-index: 2;
+    top: 0;
+    width: 100%;
+}
+
+
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+
+}
+
+
+.hide{
+    display: none;
+}
+.show{
+    display: flex-column;
+
+    
+   
+
+}
+.mobileItems{
+    
+    text-align: center;
+
+
+   
+}
+.mobileItems:hover{
+     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+#hamburger{
+    display: none;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    margin-left: 0;
+
+}
+#hamburger:hover{
+      -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-nav .mainlinks {display: none;}
+    #hamburger{display: flex;}
+    #homePage {
+   
+    background-image: url(img/IMG_6660-mobile.jpeg);
+    
+}
+}
+@media only screen and (min-width: 1000px){
+    .show {display: none;}
+    
+
+
+
+}
+
+
+
+.push {
+    margin-left: auto;
+    display: inline-flex;
+
+}
+li {
+    padding: 20px;
+     height: 30px;
+    line-height: 30px;
+
+}
+
+
+a { 
+
+    color: black;
+    text-decoration: none;
+    -webkit-transition: font-size 500ms;
+   -moz-transition: font-size 500ms;
+     -o-transition: font-size 500ms;
+        transition: font-size 500ms;
+
+}
+a:hover{
+    font-size: 120%;
+    
+
+
+}
+.socialMedia{
+    width: 32px;
+    height: 32px;
+}
+.socialMedia:hover{
+     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+/*Cover*/
+.container {
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+  
+
+
+}
+
+.cover  {
+   
+    display: flex;
+    width: 100%;
+    height:90%;
+   
+    
+     
+
+}
+cover div{
+    
+    
+    height: 100%;
+   
+}
+
+/*Grid*/
+.grid-wrapper{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding-left: 90px;
+    padding-top: 20px;
+}
+.box >img {
+    width: 100%;
+}
+.box {
+    display: table;
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+}
+.boxInfo{
+    display : table-row;
+    vertical-align : bottom;
+    height : 1px;
+    border: 1px solid blueviolet;
+}
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green{
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: rgb(221,205,161);
+    background: linear-gradient(180deg, rgba(221,205,161,1) 0%, rgba(204,185,139,1) 35%);
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: rgb(170,186,179);
+    background: linear-gradient(180deg, rgba(170,186,179,1) 0%, rgba(152,206,191,1) 35%);
+}
+/** About me decorations */
+.containerInfo{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
+    height:auto;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-top:10%;
+    margin-bottom:60px;
+    background-color: white;
+
+    
+}
+
+  
+.div1{
+    padding: 30px;
+}
+
+#officePhoto{
+    width: 100%;
+    border-radius: 10px;
+}
+#officePhoto:hover{
+     transition: 0.3s;
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+.div2{
+    padding: 30px;
+    flex-basis: 60%;
+}
+@media only screen and (max-width: 1000px) {
+   .containerInfo{
+        flex-direction: column;
+        align-items: center;
+       
+   }
+   
+
+}
+.ratingsContainer{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+    
+}
+.ratingsContainer img{
+    
+    width: 700px;
+    margin: 15px;
+    border-radius: 10px;
+
+    
+   
+    
+}
+.ratingsContainer img:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+/** About me decorations - end */
+
+footer {
+    text-align: center;
+    position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 60px; 
+   line-height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   
+}
+footer p{
+    text-align: center;
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+}
+
+
+
+
+
+.title{
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    
+    left:  16px;
+
+
+}
+.am{
+    color: black;
+}
+.navigation{
+    padding-bottom: auto;
+}
+
+
+
+/** Projects page CSS **/
+
+.project-container{
+            width:  200px;
+            height: 190px;
+            border: 2px solid black;
+            display: flex-column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            
+
+        }
+        .subcontainer1{
+            width: 90%;
+            height: 105px;
+            margin: 10px;
+        }
+        
+        .subcontainer2{
+            width: 90%;
+            height: 50px;
+            margin: 10px;
+            bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            background-color: grey;
+        }
+        .subcontainer1 img{
+            width: 100%;
+            border-radius: 6px;
+        }
+        .subcontainer2 a{
+            text-decoration: none;
+            color: black;
+        }
+        .subcontainer2 a:hover{
+            color: white;
+            font-size: 14px;
+        }
+
+        .project-container:hover{
+            transition: 0.3s;
+                -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+
+    }
+
+/** CONTACT ME PAGE Style **/
+
+.contactContainer{
+    margin-top: 140px;
+    display: flex-column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+.contactContainer h1{
+    text-align: center;
+}
+.contactmeLinks{
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+}
+.socialMedia-contact{
+    margin-top: 70px;
+    width: 64px;
+    height: 64px;
+}
+.socialMedia-contact:hover{
+    transition: 0.3s;
+    width: 78px;
+    height: 78px;
+}
+.heading-aboutme{
+    font-family: 'Londrina Sketch', cursive;
+    color: #98CEBF;
+}
+.address{
+    list-style: none;
+}
+.address li{
+    padding: 0;
+
+}
+.addressContainer{
+    margin-top: 200px;
+    display: block;
+    text-align: center;
+    
+}
+
+/* Resume Page */
+
+
+#cvFilePreview{
+    position: fixed;
+    
+  
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100%;
+    height: 90%;
+}
+
+
+    
